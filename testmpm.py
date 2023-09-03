@@ -223,8 +223,7 @@ def main():
     init_vols(preset[0])
     while window.running:
         for _ in range(25):
-            # if _ == 24:
-            #     print(FORCE_STRENGTH)
+
             substep(*FORCE_STRENGTH)
 
         render()
