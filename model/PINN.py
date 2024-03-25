@@ -40,6 +40,7 @@ class DNN(nn.Module):
         out = self.model(x)
         return out
     
+# Initialize PINN 
 class NS:
     def __init__(self, X, Y, T, u, v, nu):
         self.x = torch.tensor(X, dtype=torch.float32, requires_grad=True).to(device)
